@@ -27,5 +27,5 @@ def update_search_history(query):
 def retrieve_search(query):
     search_history = db["search"]
     print(search_history)
-    r = re.compile("("+query+")")
+    r = re.compile("(" + query + ")")
     return list(filter(r.match, search_history))

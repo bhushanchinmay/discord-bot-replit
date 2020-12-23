@@ -33,15 +33,16 @@ async def on_message(message):
         response = 'Hey {0.author.mention}'.format(message)
         await channel.send(response)
 
-    # Google search functionality
+    # Search functionality: Search for query using www.google.com
     if message.content.startswith('!google'):
         query = message.content.split(None, 1)[1]
         update_search_history(query)  # Add the "query" to the search history
         # returns with top five results for the "query"
-        results = search(query)
+        results = search(query)  # get top five search results
+
+        # Handling for no results found
         if results:
             links = ' \n'.join(results)
-            print(links)
             msg = 'Hello {}, you searched for "{}". The top five results are: \n {}'.format(
                 message.author.mention, query, links)
         else:
@@ -54,6 +55,7 @@ async def on_message(message):
         words = message.content.split("!recent ", 1)[1]
         response = retrieve_search(words)
         print("Response from search_history", response)
+
         if len(response):
             if len(response) > 1:
                 for res in response:
@@ -63,6 +65,7 @@ async def on_message(message):
         else:
             response = "No search result found related to {}".format(words)
             await channel.send(response)
+
 
 keep_alive()
 client.run(TOKEN)

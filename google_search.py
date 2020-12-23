@@ -12,19 +12,19 @@ SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
 
 def search(query):
     # service object for interacting with the API
-    service = build("customsearch", "v1",
-                    developerKey=API_KEY)
+    service = build("customsearch", "v1", developerKey=API_KEY)
 
     res = service.cse().list(
         q=query,
         cx=SEARCH_ENGINE_ID,
     ).execute()
-    # Handle if no result is found
+
+    # Handles if no result is found
     try:
         items = res["items"]
         top_five_links = []
         for i in items:
-            if(len(top_five_links) < 5):
+            if (len(top_five_links) < 5):
                 top_five_links.append(i["link"])
         print(top_five_links)
         return top_five_links
