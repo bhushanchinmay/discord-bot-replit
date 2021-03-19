@@ -30,7 +30,7 @@ Deprecated==1.2.10
 discord==1.0.1
 discord.py==1.5.1
 distlib==0.3.1
-Django==3.1.2
+Django==3.1.6
 docutils==0.16
 entrypoints==0.3
 enum34==1.1.10
