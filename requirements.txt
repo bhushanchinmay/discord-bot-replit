@@ -99,7 +99,7 @@ pycodestyle==2.6.0
 pycparser==2.20
 pyflakes==2.2.0
 PyGetWindow==0.0.8
-Pygments==2.6.1
+Pygments==2.7.4
 PyHamcrest==2.0.2
 PyMsgBox==1.0.7
 pyOpenSSL==19.1.0
