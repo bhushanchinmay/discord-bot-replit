@@ -69,7 +69,7 @@ keyring==21.2.1
 kiteconnect==3.8.2
 MarkupSafe==1.1.1
 mccabe==0.6.1
-mistune==0.8.4
+mistune==2.0.3
 more-itertools==8.4.0
 MouseInfo==0.1.2
 multidict==4.7.6
