@@ -139,7 +139,7 @@ terminado==0.8.3
 testpath==0.4.4
 threadpoolctl==2.1.0
 toml==0.10.2
-tornado==6.0.4
+tornado==6.3.3
 tqdm==4.43.0
 traitlets==4.3.3
 twine==3.2.0
