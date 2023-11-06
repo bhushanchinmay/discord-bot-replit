@@ -145,7 +145,7 @@ traitlets==4.3.3
 twine==3.2.0
 Twisted==20.3.0
 txaio==20.4.1
-ujson==3.2.0
+ujson==5.4.0
 uritemplate==3.0.1
 urllib3==1.24.3
 virtualenv==20.0.31
