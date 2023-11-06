@@ -143,7 +143,7 @@ tornado==6.0.4
 tqdm==4.43.0
 traitlets==4.3.3
 twine==3.2.0
-Twisted==20.3.0
+Twisted==23.10.0
 txaio==20.4.1
 ujson==3.2.0
 uritemplate==3.0.1
